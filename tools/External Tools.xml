@@ -1,0 +1,23 @@
+<toolSet name="External Tools">
+  <tool name="UltraCompare" description="UltraCompare" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\IDM Computer Solutions\UltraCompare\uc.exe" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="C:/Program Files/IDM Computer Solutions/UltraCompare" />
+    </exec>
+  </tool>
+  <tool name="UltraEdit" description="UltraEdit" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\IDM Computer Solutions\UltraEdit\uedit64.exe" />
+      <option name="PARAMETERS" value="$FilePath$" />
+      <option name="WORKING_DIRECTORY" value="C:/Program Files/IDM Computer Solutions/UltraEdit" />
+    </exec>
+  </tool>
+  <tool name="IrfanView" description="IrfanView" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files (x86)\IrfanView\i_view32.exe" />
+      <option name="PARAMETERS" value="$FilePath$" />
+      <option name="WORKING_DIRECTORY" value="C:/Program Files (x86)/IrfanView" />
+    </exec>
+  </tool>
+</toolSet>

@@ -1,0 +1,10 @@
+<application>
+  <component name="CodeFoldingSettings">
+    <option name="COLLAPSE_METHODS" value="true" />
+    <option name="COLLAPSE_CUSTOM_FOLDING_REGIONS" value="true" />
+  </component>
+  <component name="JavaCodeFoldingSettings">
+    <option name="collapseAnonymousClasses" value="true" />
+    <option name="collapseInnerClasses" value="true" />
+  </component>
+</application>
