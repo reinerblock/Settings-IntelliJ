@@ -1,0 +1,27 @@
+<application>
+  <component name="org.jetbrains.tfsIntegration.core.configuration.TFSConfigurationManager">
+    <option name="config">
+      <server uri="https://tfs.ifm-datalink.net/tfs/">
+        <configuration>
+          <credentials>
+            <credentials>
+              <password>dfe2dfc5dfd8dfc4dfcfdfd8df84df84df9b</password>
+              <username>block</username>
+            </credentials>
+          </credentials>
+        </configuration>
+      </server>
+      <server uri="https://tfs.ifm-datalink.net/tfs/ifmDatalinkTFS/">
+        <configuration>
+          <credentials>
+            <credentials>
+              <domain>ifmdl</domain>
+              <password>dfe2dfc5dfd8dfc4dfcfdfd8df84df84df9b</password>
+              <username>block</username>
+            </credentials>
+          </credentials>
+        </configuration>
+      </server>
+    </option>
+  </component>
+</application>
