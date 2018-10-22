@@ -80,6 +80,11 @@
       <path value="Main Toolbar" />
       <option name="myInitialPosition" value="-1" />
     </group>
+    <group value="uigd.EncodeImageBase64" is_action="true" action_type="1" position="25">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
     <action id="CloseContent" icon="$USER_HOME$/Icons/PNG/FileAndFolderClose16.png" />
     <action id="ActivateColourChooserToolWindow" icon="$USER_HOME$/Icons/PNG/IconColorPicker.png" />
     <action id="CloseProject" icon="$USER_HOME$/Icons/PNG/ActionsDialogClose16.png" />
