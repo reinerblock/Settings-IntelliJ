@@ -1,0 +1,21 @@
+<templateSet group="Java">
+  <template name="fhdr" value="// region Copyright&#10;/* &lt;copyright file=&quot;$file_name$&quot; company=&quot;$Company$&quot;&gt;&#10; * --------------------------------------------------------------------------------------------------------------------&#10; * Copyright (c) $year$-$year$ $Company$. All Rights Reserved. Confidential.&#10; * --------------------------------------------------------------------------------------------------------------------&#10; * &lt;/copyright&gt;&#10; *&#10; * Company      : $Company$&#10; * Project      : $project_name$&#10; * Module       : $package_name$&#10; * File         : $file_name$&#10; * Author       : $Author$&#10; * Creation date: $creationdate$&#10; * Description  : $END$&#10; * --------------------------------------------------------------------------------------------------------------------&#10; * Last Modified By : $Author$&#10; * Last Modified On : $creationdate$&#10; * --------------------------------------------------------------------------------------------------------------------&#10; * History&#10; * Date        Description&#10; * $creationdate$  Start implementation&#10; * -------------------------------------------------------------------------------------------------------------------- */&#10;// endregion Copyright" description="File Header" toReformat="false" toShortenFQNames="true">
+    <variable name="file_name" expression="fileName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="package_name" expression="currentPackage()" defaultValue="" alwaysStopAt="false" />
+    <variable name="year" expression="date(&quot;yyyy&quot;)" defaultValue="" alwaysStopAt="false" />
+    <variable name="creationdate" expression="date(&quot;yyyy-MM-dd&quot;)" defaultValue="" alwaysStopAt="false" />
+    <variable name="Company" expression="" defaultValue="&quot;ifm datalink gmbh&quot;" alwaysStopAt="false" />
+    <variable name="project_name" expression="" defaultValue="&quot;Linerecorder_WebApplication&quot;" alwaysStopAt="false" />
+    <variable name="Author" expression="" defaultValue="&quot;Reiner Block&quot;" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="cpr" value="// region Copyright&#10;//--------------------------------------------------------------------------&#10;// Copyright (c) $year$-$year$ $Company$. All Rights Reserved. Confidential.&#10;//--------------------------------------------------------------------------&#10;// endregion Copyright&#10;" description="Copyright" toReformat="false" toShortenFQNames="true">
+    <variable name="year" expression="date(&quot;yyyy&quot;)" defaultValue="" alwaysStopAt="false" />
+    <variable name="Company" expression="" defaultValue="&quot;ifm datalink gmbh&quot;" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
