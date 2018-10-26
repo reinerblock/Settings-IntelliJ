@@ -1,5 +1,5 @@
 <templateSet group="Java">
-  <template name="fhdr" value="// region Copyright&#10;/* &lt;copyright file=&quot;$file_name$&quot; company=&quot;$Company$&quot;&gt;&#10; * --------------------------------------------------------------------------------------------------------------------&#10; * Copyright (c) $year$-$year$ $Company$. All Rights Reserved. Confidential.&#10; * --------------------------------------------------------------------------------------------------------------------&#10; * &lt;/copyright&gt;&#10; *&#10; * Company      : $Company$&#10; * Project      : $project_name$&#10; * Module       : $package_name$&#10; * File         : $file_name$&#10; * Author       : $Author$&#10; * Creation date: $creationdate$&#10; * Description  : $END$&#10; * --------------------------------------------------------------------------------------------------------------------&#10; * Last Modified By : $Author$&#10; * Last Modified On : $creationdate$&#10; * --------------------------------------------------------------------------------------------------------------------&#10; * History&#10; * Date        Description&#10; * $creationdate$  Start implementation&#10; * -------------------------------------------------------------------------------------------------------------------- */&#10;// endregion Copyright" description="File Header" toReformat="false" toShortenFQNames="true">
+  <template name="fhdr" value="// region Copyright&#10;/* &lt;copyright file=&quot;$file_name$&quot; company=&quot;$Company$&quot;&gt;&#10; * --------------------------------------------------------------------------------------------------------------------&#10; * Copyright (c) $year$-$year$ $Company$. All Rights Reserved. Confidential.&#10; * --------------------------------------------------------------------------------------------------------------------&#10; * &lt;/copyright&gt;&#10; *&#10; * Company      : $Company$&#10; * Project      : $project_name$&#10; * Module       : $package_name$&#10; * File         : $file_name$&#10; * Author       : $Author$&#10; * Creation date: $creationdate$&#10; * Description  : $END$&#10; * --------------------------------------------------------------------------------------------------------------------&#10; * Last Modified By : $Author$&#10; * Last Modified On : $creationdate$&#10; * --------------------------------------------------------------------------------------------------------------------&#10; * History&#10; * Date        Description&#10; * $creationdate$  Start implementation&#10; * -------------------------------------------------------------------------------------------------------------------- */&#10;// endregion Copyright&#10;" description="File Header" toReformat="false" toShortenFQNames="true">
     <variable name="file_name" expression="fileName()" defaultValue="" alwaysStopAt="false" />
     <variable name="package_name" expression="currentPackage()" defaultValue="" alwaysStopAt="false" />
     <variable name="year" expression="date(&quot;yyyy&quot;)" defaultValue="" alwaysStopAt="false" />
@@ -11,9 +11,45 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="cpr" value="// region Copyright&#10;//--------------------------------------------------------------------------&#10;// Copyright (c) $year$-$year$ $Company$. All Rights Reserved. Confidential.&#10;//--------------------------------------------------------------------------&#10;// endregion Copyright&#10;" description="Copyright" toReformat="false" toShortenFQNames="true">
+  <template name="regc" value="// region Copyright&#10;//--------------------------------------------------------------------------&#10;// Copyright (c) $year$-$year$ $Company$. All Rights Reserved. Confidential.&#10;//--------------------------------------------------------------------------&#10;// endregion Copyright&#10;" description="Copyright" toReformat="false" toShortenFQNames="true">
     <variable name="year" expression="date(&quot;yyyy&quot;)" defaultValue="" alwaysStopAt="false" />
     <variable name="Company" expression="" defaultValue="&quot;ifm datalink gmbh&quot;" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="regcdi" value="//########################################################################################&#10;// region Construction/Destruction/Initialisation&#10;// Contains all constructors (class constructors as well as static constructors),&#10;// All initialisation methods that need to be called before using the class&#10;// And finally all finalization code (Finalizers, IDisposable implementation, ...)&#10;$END$&#10;$SELECTION$&#10;// endregion Construction/Destruction/Initialisation&#10;" description="region Construction/Destruction/Initialisation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="regce" value="//########################################################################################&#10;// region Constants and Enums&#10;// Contains all constants and enums&#10;$END$&#10;$SELECTION$&#10;// endregion Constants and Enums&#10;" description="region Constants and Enums" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="regd" value="//########################################################################################&#10;// region Delegates and Events&#10;// Contains all delegates and events&#10;$END$&#10;$SELECTION$&#10;// endregion Delegates and Events&#10;" description="region Delegates and Events" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="regeh" value="//=========================================================================================&#10;// region Event Handlers&#10;//=========================================================================================&#10;$END$&#10;$SELECTION$&#10;//=========================================================================================&#10;// endregion Event Handlers&#10;//=========================================================================================&#10;" description="region Event Handlers" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="regf" value="//########################################################################################&#10;// region Fields&#10;// Contains all private fields (and also public fields in case there is a really&#10;// good reason to have some)&#10;$END$&#10;$SELECTION$&#10;// endregion Fields&#10;//########################################################################################&#10;" description="region Fields" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="regim" value="//########################################################################################&#10;// region I$NAME$ Members&#10;// Contains the full implementation of the interface (each interfaces has it's own region)&#10;// including properties and events that are part of the interface definition&#10;$END$&#10;$SELECTION$&#10;// endregion I$NAME$ Members&#10;" description="region internal members" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="reginm" value="//=========================================================================================&#10;// region Internal Methods&#10;//=========================================================================================&#10;$END$&#10;$SELECTION$&#10;//=========================================================================================&#10;// endregion Internal Methods&#10;//=========================================================================================&#10;" description="region Internal Methods" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
